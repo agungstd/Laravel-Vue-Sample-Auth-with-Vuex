@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Catch-all route for Single Page Application (SPA)
 Route::get('/{any}', function () {
     return view('welcome');
-})->where('any', '.*');
+})->where('any', '.*')->name('spa');
