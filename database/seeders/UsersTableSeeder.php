@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\str;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -16,7 +17,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::Create([
-            'name' => "Yan Afriyoko",
+            'name' => "Agung Priambodo",
             'email' => 'admin@gmail.com',
             'password' => Hash::make('secret'),
         ]);
