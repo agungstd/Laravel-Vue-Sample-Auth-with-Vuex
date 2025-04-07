@@ -36,4 +36,18 @@ class UserFactory extends Factory
             ];
         });
     }
+
+    /**
+     * Define a state for assigning roles to users.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory
+     */
+    public function withRole($role)
+    {
+        return $this->state(function (array $attributes) use ($role) {
+            return [
+                'role' => $role,
+            ];
+        });
+    }
 }
